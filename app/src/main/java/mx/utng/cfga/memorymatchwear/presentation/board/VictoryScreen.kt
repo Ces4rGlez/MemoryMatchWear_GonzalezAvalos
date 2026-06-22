@@ -1,3 +1,5 @@
+package mx.utng.cfga.memorymatchwear.presentation.board
+
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.runtime.Composable

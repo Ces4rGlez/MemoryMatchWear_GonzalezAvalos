@@ -5,13 +5,13 @@ plugins {
 
 android {
     namespace = "mx.utng.cfga.memorymatchwear"
-    // Simplificamos la versión de compilación para máxima estabilidad
-    compileSdk = 34
+    // Actualizado a 36 para cumplir con los requisitos de las librerías modernas de Compose y Core
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "mx.utng.cfga.memorymatchwear"
         minSdk = 30
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
     }
@@ -44,12 +44,11 @@ dependencies {
 
     // 2. Jetpack Compose para Wear OS (Material y Foundation adaptados a pantallas circulares)
     implementation(platform(libs.compose.bom))
-    implementation("androidx.wear.compose:compose-material:1.3.1")
-    implementation("androidx.wear.compose:compose-foundation:1.3.1")
+    implementation("androidx.wear.compose:compose-material:1.4.0")
+    implementation(libs.compose.foundation)
 
     // 3. Animaciones para el Flip de las Tarjetas en 3D
     implementation("androidx.compose.animation:animation:1.7.6")
-    implementation(libs.compose.foundation) // Foundation para gestos de toque (.clickable)
     implementation(libs.ui)
     implementation(libs.ui.graphics)
 

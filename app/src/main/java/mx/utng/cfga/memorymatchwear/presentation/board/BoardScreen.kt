@@ -1,6 +1,5 @@
 package mx.utng.cfga.memorymatchwear.presentation.board
 
-import VictoryScreen
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.grid.*
@@ -15,7 +14,6 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.wear.compose.material.*
 import kotlinx.coroutines.delay
 import mx.utng.cfga.memorymatchwear.domain.model.GamePhase
-import mx.utng.cfga.memorymatchwear.presentation.board.GameEffect
 
 @Composable
 fun BoardScreen(viewModel: MemoryViewModel = viewModel()) {
@@ -44,7 +42,7 @@ fun BoardScreen(viewModel: MemoryViewModel = viewModel()) {
             text = "${state.elapsedSeconds}s · ${state.moves} mov",
             style = MaterialTheme.typography.caption1,
             color = Color.White,
-            modifier = Modifier.alignment(Alignment.TopCenter).padding(top = 12.dp)
+            modifier = Modifier.align(Alignment.TopCenter).padding(top = 12.dp)
         )
 
         LazyVerticalGrid(
