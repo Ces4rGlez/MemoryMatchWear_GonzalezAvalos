@@ -44,4 +44,4 @@ mx.utng.cfga.memorymatchwear
 El tablero consta de 12 cartas (6 parejas). Debes voltearlas de dos en dos para encontrar las coincidencias. El juego termina cuando todas las parejas han sido encontradas. ¡Intenta superar tu propio récord de tiempo!
 
 ---
-Desarrollado por [González Avalos César Fernando](https://github.com/Ces4R) como parte de un proyecto de desarrollo para Wearables.
+Desarrollado por [González Avalos César Fernando](https://github.com/Ces4rGlez) como parte de un proyecto de desarrollo para Wearables.
